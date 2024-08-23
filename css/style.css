@@ -5,7 +5,7 @@
     border: 1px solid black;
     animation-name: move_litle_cub;
     animation-duration: 4000ms;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-iteration-count: infinite;
 }
 @keyframes move_litle_cub{
@@ -18,15 +18,15 @@
     }
     50%{
         background-color: rgb(123, 255, 0);
-        transform: translateY(300px);
+        transform: translateY(300px) translateX(500px);
     }
     75%{
         background-color: rgb(255, 94, 0);
-        transform: translateX(-500px);
+        transform: translateY(300px) translateX(0px);
     }
     100%{
         background-color: blue;
-        transform: translateY(-300px);
+        transform: translateY(0px) translateX(0px);
     }
 
 }
